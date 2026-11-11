@@ -9,3 +9,24 @@
 ```bash
 curl -X GET "https://api.mystore.ru/v1/cart" \
   -H "Authorization: Bearer <ваш_токен>"
+2. Добавление товара в корзину
+Чтобы добавить товар, отправьте POST-запрос на эндпоинт /cart/items.
+URL: https://api.mystore.ru/v1/cart/items
+Метод: POST
+Content-Type: application/json
+Пример тела запроса (Request Body):
+JSON
+{
+  "productId": "prod_987654",
+  "quantity": 2
+}
+Пример успешного ответа (200 OK):
+JSON
+{
+  "cartId": "cart_12345",
+  "totalItems": 2,
+  "totalPrice": 299000
+}
+Важно:
+Поле totalPrice возвращается в копейках (целое число).
+Если товара нет в наличии, сервер вернет ошибку 409 Conflict. При возникновении вопросов обращайтесь в чат поддержки архитектуры.
