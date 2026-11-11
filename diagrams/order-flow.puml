@@ -1,0 +1,47 @@
+@startuml
+autonumber
+skinparam ParticipantPadding 10
+skinparam sequenceMessageAlign center
+
+actor "Покупатель" as Client
+participant "API Gateway" as Gateway
+participant "Сервис Заказов\n(Orders)" as Orders
+participant "Сервис Корзины\n(Cart)" as Cart
+participant "Сервис Склада\n(Stock)" as Stock
+database "База Данных\n(PostgreSQL)" as DB
+
+Client -> Gateway: POST /orders (cartId, address, paymentMethod)
+activate Gateway
+
+Gateway -> Orders: Создать заказ
+activate Orders
+
+Orders -> Cart: Получить товары из корзины
+activate Cart
+Cart --> Orders: Список товаров и сумма
+deactivate Cart
+
+alt Корзина пуста
+    Orders --> Gateway: Ошибка 409 (Корзина пуста)
+    Gateway --> Client: JSON с ошибкой
+else Корзина не пуста
+    
+    Orders -> Stock: Зарезервировать товары
+    activate Stock
+    Stock --> Orders: Резерв подтверждён
+    deactivate Stock
+
+    Orders -> DB: Сохранить заказ и очистить корзину
+    activate DB
+    DB --> Orders: orderId
+    deactivate DB
+
+    Orders --> Gateway: 201 Created (orderId, status, totalPrice)
+    deactivate Orders
+    
+    Gateway --> Client: Возврат ответа клиенту
+end
+
+deactivate Gateway
+
+@enduml
