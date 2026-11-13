@@ -25,6 +25,6 @@
 5. **[Релизные заметки (`/release-notes/v1.2.0.md`)](release-notes/v1.2.0.md)** — пример Release Notes для спринта.
 
 ---
-📫 **Контакты:**
-* Telegram: [@alevaler](https://t.me/alevaler)
-* Email: ak.akosolapov@bk.ru
+### 📬 Контакты:
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/alevaler)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ak.akosolapov@bk.ru)
