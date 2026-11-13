@@ -6,11 +6,12 @@
 
 ---
 
-## 🛠 Стек и инструменты
-* **Документирование и валидация API:** REST API, OpenAPI / Swagger 3.0, JSON, Postman.
-* **Языки и форматы:** Markdown, YAML.
-* **Диаграммы:** UML(Sequence), BPMN(бизнес-процессы).
-* **Инструменты:** VS Code, Git (GitHub, GitLab), Atlassian Confluence, Atlassian Jira, PlantUML, Draw.io.
+### 🛠️ Стек и инструменты
+
+**API и валидация:** REST API, OpenAPI / Swagger 3.0, JSON, Postman  
+**Форматы:** Markdown, YAML  
+**Диаграммы:** UML (Sequence), BPMN (бизнес-процессы)  
+**Инструменты:** VS Code, Git (GitHub, GitLab), Confluence, Jira, PlantUML, Draw.io
 
 ---
 
