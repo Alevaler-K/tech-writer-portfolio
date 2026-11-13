@@ -7,10 +7,10 @@
 ---
 
 ## 🛠 Стек и инструменты
-* **Документирование API:** REST API, OpenAPI / Swagger 3.0, JSON, Postman.
+* **Документирование и валидация API:** REST API, OpenAPI / Swagger 3.0, JSON, Postman.
 * **Языки и форматы:** Markdown, YAML.
-* **Диаграммы:** PlantUML (Sequence, Component), BPMN (бизнес-процессы).
-* **Инструменты:** Git (GitHub, GitLab), Atlassian Confluence, Atlassian Jira, Draw.io.
+* **Диаграммы:** UML(Sequence), BPMN(бизнес-процессы).
+* **Инструменты:** VS Code, Git (GitHub, GitLab), Atlassian Confluence, Atlassian Jira, PlantUML, Draw.io.
 
 ---
 
@@ -19,9 +19,10 @@
 Здесь собраны примеры моих работ, демонстрирующие ключевые навыки:
 
 1. **[Спецификация REST API (`/api/openapi.yaml`)](api/openapi.yaml)** — пример описания эндпоинтов интернет-магазина (корзина и заказы) в формате OpenAPI 3.0.
-2. **[Схема бизнес-процесса (`/diagrams/order-flow.png`)](diagrams/order-flow.png)** — визуализация логики создания заказа (PlantUML Sequence Diagram).
-3. **[Руководство для разработчиков (`/guides/quickstart.md`)](guides/quickstart.md)** — гайд по быстрому старту работы с API.
-4. **[Релизные заметки (`/release-notes/v1.2.0.md`)](release-notes/v1.2.0.md)** — пример Release Notes для спринта.
+2. **[Интерактивная OpenAPI-документация (Redoc)](https://alevaler-k.github.io/tech-writer-portfolio/)** — пример спецификации REST API, оформленной по стандарту Docs-as-Code.
+3. **[Схема бизнес-процесса (`/diagrams/order-flow.png`)](diagrams/order-flow.png)** — визуализация логики создания заказа (PlantUML Sequence Diagram).
+4. **[Руководство для разработчиков (`/guides/quickstart.md`)](guides/quickstart.md)** — гайд по быстрому старту работы с API.
+5. **[Релизные заметки (`/release-notes/v1.2.0.md`)](release-notes/v1.2.0.md)** — пример Release Notes для спринта.
 
 ---
 📫 **Контакты:**
